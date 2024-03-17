@@ -1,0 +1,16 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="170320241619_001_init_tables" author="Nikita">
+        <createTable tableName="local_places_lift_gates">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="lon" type="DOUBLE"/>
+            <column name="lat" type="DOUBLE"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

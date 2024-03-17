@@ -1,0 +1,14 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="170320241627_002_fill_users_table" author="your_name">
+        <insert tableName="local_places_lift_gates">
+            <column name="id" value="1"/>
+            <column name="lon" value="14.5801473"/>
+            <column name="lat" value="53.4600926"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
