@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class Main {
+    //Test commit check
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
     }
