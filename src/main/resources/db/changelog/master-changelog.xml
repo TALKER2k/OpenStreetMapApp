@@ -3,10 +3,6 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
-    <preConditions>
-        <dbms type="postgresql"/>
-    </preConditions>
-
     <include file="1.0/170320241619_001_init_tables.xml" relativeToChangelogFile="true"/>
-    <include file="1.0/170320241627_002_fill_users_table.xml" relativeToChangelogFile="true"/>
+<!--    <include file="1.0/170320241627_002_fill_users_table.xml" relativeToChangelogFile="true"/>-->
 </databaseChangeLog>

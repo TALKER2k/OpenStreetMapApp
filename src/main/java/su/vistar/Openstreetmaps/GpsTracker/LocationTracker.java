@@ -1,4 +1,4 @@
-package su.vistar.Openstreetmaps;
+package su.vistar.Openstreetmaps.GpsTracker;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.net.URL;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-public class LocationExample {
+public class LocationTracker {
 
     public static void main(String[] args) {
         try {

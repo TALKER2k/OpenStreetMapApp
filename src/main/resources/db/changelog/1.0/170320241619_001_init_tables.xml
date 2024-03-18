@@ -3,13 +3,18 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
 
+<!--    <changeSet id="00000000000000" author="jhipster">-->
+<!--        <createSequence sequenceName="local_places_lift_gates_seq" startValue="1050" incrementBy="50"/>-->
+<!--    </changeSet>-->
+
     <changeSet id="170320241619_001_init_tables" author="Nikita">
         <createTable tableName="local_places_lift_gates">
-            <column name="id" type="BIGINT">
-                <constraints primaryKey="true" nullable="false"/>
+            <column name="gates_id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false" unique="true"/>
             </column>
             <column name="lon" type="DOUBLE"/>
             <column name="lat" type="DOUBLE"/>
+            <column name="name" type="VARCHAR(100)"/>
         </createTable>
     </changeSet>
 

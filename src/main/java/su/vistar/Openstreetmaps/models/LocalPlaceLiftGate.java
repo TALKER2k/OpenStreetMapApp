@@ -8,12 +8,13 @@ import lombok.Data;
 @Data
 public class LocalPlaceLiftGate {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long id;
+    @Column(name = "gates_id", unique = true)
+    private Long gatesId;
     @Column(name = "lon")
     private Double lon;
     @Column(name = "lat")
     private Double lat;
+    @Column(name = "name")
+    private String name;
 }
 
